@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="dev"
+		fetch="https://github.com/roynatech2544"
+		revision="lineage-20.0" />
+	<remote name="8890q"
+		fetch="https://github.com/8890q"
+		revision="lineage-20.0" />
+	<remote name="los"
+		fetch="https://github.com/LineageOS"
+		revision="lineage-20" />
+
+        <!-- Sync trees -->
+        <project path="device/samsung/universal8890-common" name="android_device_samsung_universal8890-common" remote="dev" />
+	<project path="device/samsung/herolte" name="android_device_samsung_herolte" remote="8890q" />
+	<project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="los" />
+	<project path="kernel/samsung/universal8890" name="android_kernel_samsung_universal8890" remote="8890q"/>
+        <project path="hardware/samsung" name="android_hardware_samsung" remote="los"/>
+        <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="dev" />
+</manifest>
