@@ -18,6 +18,7 @@
 	<project path="hardware/samsung" name="android_hardware_samsung" remote="los"/>
 	<project path="patches" name="patches" remote="dev" revision="master">
 		<linkfile src="apply.sh" dest="apply.sh"/>
+		<linkfile src="revert.sh" dest="revert.sh"/>
 	</project>
         <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="dev" />
 </manifest>
